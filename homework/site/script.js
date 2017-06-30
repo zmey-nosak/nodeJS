@@ -20,7 +20,7 @@ http.createServer(function onRequest(request, response) {
     var pathname = url.parse(request.url).pathname;
     if (pathname == '/')
         pathname = 'index.html';
-    pathname = pathname.substring(1, pathname.length);
+    else pathname = pathname.substring(1, pathname.length);
     var extname = path.extname(pathname);
     console.log(extname);
     var mimeType = mimeTypes[path.extname(pathname)];
