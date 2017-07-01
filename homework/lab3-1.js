@@ -9,6 +9,7 @@ var serv = http.createServer(function (request, response) {    // вызов м�
     } else {
         filename = './lab3-1-en.html';
     }
+
     // if (process.argv[2] === 'en') {
     //     filename = './lab3-1-en.html';
     // } else if (process.argv[2] === 'ru') {
@@ -16,6 +17,7 @@ var serv = http.createServer(function (request, response) {    // вызов м�
     // } else {
     //     filename = './lab3-1-en.html';
     // }
+
     fs.readFile(filename, (err, data) => {
         if (err) throw err;
         response.writeHead(200, {'Content-Type': "text/html"});
