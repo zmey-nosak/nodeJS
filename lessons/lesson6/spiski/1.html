@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="mustache.min.js"></script>
+</head>
+<body>
+
+<div id="menu"></div>
+<script>
+	template = "<ul>{{#repo}}<li><a href='#'>{{name}}</a></li>{{/repo}}</ul>";
+	data = { "repo": [
+		{ "name": "home" },
+		{ "name": "about" },
+		{ "name": "contacts" }
+	]};
+	result = Mustache.render(template, data);
+	document.getElementById('menu').innerHTML=result;
+//	$('<body>').append(result);
+//	console.log(result);
+</script>
+</body>
+</html>

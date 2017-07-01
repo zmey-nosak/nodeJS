@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  p=message
+  form(action="/admin/logout", method="post")
+    p
+      input(type="submit", value="logout")

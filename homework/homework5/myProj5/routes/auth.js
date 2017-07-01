@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
 });
 router.post('/', function (req, res, next) {
     var body = req.body;
-    console.log(body.login + " " + body.password + " " + body.password);
+    console.log(body.login + " " + body.password + " " + req.body["mail"]);
     var html = mustache.render(template, req.body);
     res.status(200).send(html);
     // res.redirect('http://yandex.ru');
