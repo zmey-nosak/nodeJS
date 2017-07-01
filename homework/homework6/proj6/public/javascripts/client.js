@@ -15,8 +15,8 @@ setInterval(function () {
     },
     4000
 );
-function render(mess){
-    mess.forEach(function(item, i, arr){
+function render(mess) {
+    mess.forEach(function (item, i, arr) {
         $('#contener').append('<p> name: ' + item.name + ' data: ' + item.data + '</p>')
     });
 }
