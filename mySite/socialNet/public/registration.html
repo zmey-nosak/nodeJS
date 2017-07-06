@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <form class="column-flex-container" role="form">
+        <h2 class="header-login">Registration</h2>
+        <input type="text" id="firstName" class="form-control" placeholder="First Name" required autofocus>
+        <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+        <input type="text" id="dob" class="form-control" placeholder="Date of birth" required>
+        <div class="select-container">
+            <label class="select-label" for="sexField">Sex</label>
+            <select class="form-control select-sex" id="sexField">
+                <option value="0"></option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </div>
+        <div class="select-container">
+            <label class="select-label" for="countryField">Country</label>
+            <select class="form-control select-country" id="countryField">
+                <option value="0"></option>
+                <option value="1">Russian</option>
+                <option value="2">USA</option>
+            </select>
+        </div>
+        <div class=" select-container">
+            <label class="select-label" for="cityField">City</label>
+            <select class="form-control select-city" id="cityField">
+                <option value="0"></option>
+                <option value="1">Saint-Petersburg</option>
+                <option value="2">Moscow</option>
+            </select>
+        </div>
+        <input type="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <a class="links-class" href="login.html">Login</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+    </form>
+</div>
+</body>
+</html>

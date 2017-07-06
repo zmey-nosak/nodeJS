@@ -1,0 +1,251 @@
+body {
+    background-color: rgba(237, 238, 240, 1);
+}
+
+.column-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 60px auto;
+}
+
+.header-login {
+    align-self: center; /*выравнивает по центру*/
+}
+
+.form-control {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.links-class {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.links-class:hover {
+    text-decoration: none;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: row;
+    /*margin: 0 auto;*/
+    /*align-items: flex-start;*/
+}
+
+.select-label {
+    flex: 1;
+    align-self: center; /*выравнивает по центру*/
+}
+
+.select-sex {
+    flex: 2;
+}
+
+.select-country {
+    flex: 2;
+}
+
+.select-city {
+    flex: 2;
+}
+
+.wrapper {
+    margin: 20px auto;
+    width: 960px;
+    display: flex;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-content: center;
+    /*background-color: white;*/
+    margin-right: 20px;
+}
+
+.additional-content-column {
+    /*display: flex;*/
+    flex: 3;
+    /*flex-direction: column;*/
+    /*border: 1px solid blue;*/
+    height: 600px;
+    margin-right: 20px;
+}
+
+.avatar-class {
+    margin: 0 auto;
+    background-color: white;
+}
+
+.change-avatar-class {
+    background-color: white;
+    padding: 0 10px 10px;
+    margin: 0 auto 20px;
+}
+
+.friends-container {
+    display: flex;
+    /*background-color: white;*/
+    flex: 5;
+    /*border: 1px solid green;*/
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+    /*background-color: white;*/
+}
+
+.friend-class {
+    display: inline-flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    margin: 10px;
+    /*width: 50px;*/
+    /*height:50px;*/
+}
+
+.friend-ava-class {
+    /*border: 1px solid white;*/
+    /*border-radius: 25px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+}
+
+.friend-ava-class > img {
+    margin: 0 auto;
+    max-height: 100%;
+    border: 1px solid;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.friend-class > a {
+    align-self: center;
+}
+
+.img-ava {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 100%;
+    padding: 10px 25px;
+    height: 250px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #E1E4EB;
+}
+
+.panel-title {
+    align-self: center;
+    text-align: center;
+}
+
+.file-upload input[type="file"] {
+
+    display: none; /* скрываем input file */
+
+}
+
+/* задаем стили кнопки выбора файла*/
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    margin: 0 auto;
+    /*background: #4169E1;*/
+    background-color: #337ab7;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.file-upload:hover {
+    background: #4169E1;
+    /*background-color: #337ab7;*/
+}
+
+/* Растягиваем label на всю область блока .file-upload */
+
+.file-upload label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* стиль текста на кнопке*/
+
+.file-upload span {
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.content-column {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    background-color: white;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px 0;
+}
+
+.name-class {
+
+}
+
+.personal-info-container {
+    display: inline-flex;
+    padding: 10px 0 0;
+    margin: 0 auto 10px;
+}
+
+.personal-info-label {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1
+}
+
+.personal-info-value {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 2;
+}
+
+.page-content-info-container {
+    display: inline-flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.personal-info-container, .page-content-info-container {
+    border-top: 1px solid #E7E8EC;
+}
+
+.item-page-content-info {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: center;
+    text-align: center;
+}
