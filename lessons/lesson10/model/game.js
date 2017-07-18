@@ -46,7 +46,7 @@ exports.init = function (socket) {
             });
             socket.emit('wait', 'Ожидаем второго игрока');
         }
-    })
+    });
     socket.on('changeTurn', function (data) {
         console.log(data);
         //получаем комнату
@@ -55,7 +55,7 @@ exports.init = function (socket) {
         if (room.firstPlayer.name === data.playerName) {
             //первый игрок отправляем второму
             room.secondPlayer.socket.emit('nextTurn', data);
-        }else{
+        } else {
             //второй игрок отправляем первому
             room.firstPlayer.socket.emit('nextTurn', data);
         }

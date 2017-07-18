@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <ul class="nav nav-pills nav-stacked menu-column">
+        <li class="active">
+            <a href="#"><span class="glyphicon glyphicon-home"></span> Main page</a>
+        </li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-list-alt"></span> News</a>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages<span
+                class="badge pull-right">42</span></a>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Friends<span
+                class="badge pull-right">2</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Groups<span
+                class="badge pull-right">1</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-camera"></span> Photos</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-music"></span> Audio</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Video</a></li>
+        <li><a href="http:/localhost:8080"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+    <div class="additional-content-column">
+        <div class="avatar-class">
+            <img class="img-ava" src="/images/Jellyfish.jpg">
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Friends Online</h3>
+            </div>
+            <div class="panel-body">
+                <section class="friends-container">
+                    {{#user.friends}}
+                        <div class="friend-class">
+                            <div class="friend-ava-class">
+                                <img src={{friend_ava_src}}>
+                            </div>
+                            <a class="#" href="../../users/{{friend_id}}">{{friend_name}}</a>
+                        </div>
+                    {{/user.friends}}
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="content-column">
+        <div class="about-me-container">
+            <h4>{{user.first_name}} {{user.last_name}}</h4>
+            <p class="status">{{user.status}}</p>
+        </div>
+        <div class="personal-info-container">
+            <div class="personal-info-label">City:</div>
+            <div class="personal-info-value">{{user.city_name}}</div>
+        </div>
+        <div class="personal-info-container">
+            <div class="personal-info-label">Groups:</div>
+            <div class="personal-info-value">
+                {{#user.groups}}
+                    <a class="" href="/groups/{{group_id}}">{{group_name}}</a>,
+                {{/user.groups}}
+            </div>
+        </div>
+        <div class="page-content-info-container">
+            <a href="#" class="item-page-content-info">20 friends</a>
+            <a href="#" class="item-page-content-info">3 photos</a>
+            <a href="#" class="item-page-content-info">18 audio</a>
+            <a href="#" class="item-page-content-info">99 video</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

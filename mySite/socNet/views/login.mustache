@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <p>{{message}}</p>
+    <form class="column-flex-container" role="form" action="users" method="post">
+        <h2 class="header-login">Please sign in</h2>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <a class="links-class" href="registration">Registration</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+</body>
+</html>
